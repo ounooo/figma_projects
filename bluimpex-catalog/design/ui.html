@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Блюимпекс — страница элементов</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v=10">
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <span class="topbar__item">БЛЮИМПЕКС · страница элементов</span>
+      <span class="topbar__spacer"></span>
+      <label class="topbar__item">Предпросмотр
+        <select class="topbar__select" data-preview>
+          <option value="ui.html" selected>ui.html — элементы</option>
+          <option value="index.html">index.html — карта прототипа</option>
+          <option value="catalog.html">catalog.html — каталог</option>
+          <option value="section.html">section.html — раздел</option>
+          <option value="list.html">list.html — список товаров</option>
+          <option value="product.html">product.html — карточка</option>
+          <option value="login.html">login.html — вход</option>
+          <option value="register.html">register.html — регистрация</option>
+          <option value="profile.html">profile.html — профиль</option>
+          <option value="cart.html">cart.html — корзина</option>
+          <option value="orders.html">orders.html — заказы</option>
+        </select>
+      </label>
+      <a class="topbar__item" href="index.html">Все страницы</a>
+    </div>
+  </div>
+
+  <main class="container sg">
+    <section class="sg-block">
+      <p class="sg-label">Цвета</p>
+      <div class="sg-swatches">
+        <div class="swatch swatch--navy"><div class="swatch__chip"></div><div class="swatch__name">Navy 900</div><div class="swatch__hex">#0F2437</div></div>
+        <div class="swatch swatch--text"><div class="swatch__chip"></div><div class="swatch__name">Текст</div><div class="swatch__hex">#1F2933</div></div>
+        <div class="swatch swatch--muted"><div class="swatch__chip"></div><div class="swatch__name">Вторичный</div><div class="swatch__hex">#6B7280</div></div>
+        <div class="swatch swatch--accent"><div class="swatch__chip"></div><div class="swatch__name">Акцент</div><div class="swatch__hex">#E24326</div></div>
+        <div class="swatch swatch--accent-dark"><div class="swatch__chip"></div><div class="swatch__name">Акцент тёмный</div><div class="swatch__hex">#C7381E</div></div>
+        <div class="swatch swatch--cool"><div class="swatch__chip"></div><div class="swatch__name">Фон холодный</div><div class="swatch__hex">#EDF3F6</div></div>
+        <div class="swatch swatch--surface"><div class="swatch__chip"></div><div class="swatch__name">Фон светлый</div><div class="swatch__hex">#F5F7FA</div></div>
+        <div class="swatch swatch--white"><div class="swatch__chip"></div><div class="swatch__name">Белый</div><div class="swatch__hex">#FFFFFF</div></div>
+      </div>
+    </section>
+
+    <section class="sg-block">
+      <p class="sg-label">Заголовки · Montserrat</p>
+      <h1>Title 1 | Заголовок 1 | H1</h1>
+      <h2>Title 2 | Заголовок 2 | H2</h2>
+      <h3>Title 3 | Заголовок 3 | H3</h3>
+      <h4>Title 4 | Заголовок 4 | H4</h4>
+      <h5>Title 5 | Заголовок 5 | H5</h5>
+      <h6>Title 6 | Заголовок 6 | H6</h6>
+    </section>
+
+    <section class="sg-block">
+      <p class="sg-label">Текст · Manrope</p>
+      <p>Оригинальная фурнитура Blum оптом со склада в Минске и под заказ — для производителей мебели и торговых компаний в Беларуси и России. Цены указаны без НДС и доступны в личном кабинете.</p>
+      <div class="sg-split">
+        <div>
+          <h3>Обычный текст</h3>
+          <p>Подъёмные механизмы, петли, системы выдвижения и направляющие. Каждая позиция приходит из 1С: артикул, товарный ID, характеристики, наличие и цена по прейскуранту клиента.</p>
+        </div>
+        <div>
+          <h3>Текст с форматированием</h3>
+          <p>Подъёмные механизмы, <strong>петли</strong>, системы выдвижения и направляющие. Каждая позиция приходит из 1С: <a href="#">артикул</a>, товарный ID, характеристики, наличие и цена по прейскуранту клиента.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sg-block">
+      <p class="sg-label">Цитаты</p>
+      <div class="sg-split">
+        <blockquote>Цены и оформление заказов доступны в личном кабинете. Только для юридических лиц и ИП.</blockquote>
+        <blockquote><em>Личный кабинет активирует менеджер после проверки регистрационных данных.</em></blockquote>
+      </div>
+    </section>
+
+    <section class="sg-block">
+      <p class="sg-label">Списки</p>
+      <div class="sg-split">
+        <div>
+          <h3>Ненумерованный</h3>
+          <ul><li>Подъёмные механизмы</li><li>Системы петель</li><li>Системы выдвижения</li><li>Системы направляющих</li></ul>
+        </div>
+        <div>
+          <h3>Нумерованный</h3>
+          <ol><li>Регистрация компании</li><li>Проверка менеджером</li><li>Активация кабинета</li><li>Доступ к ценам</li></ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="sg-block">
+      <p class="sg-label">Таблица</p>
+      <table>
+        <thead><tr><th>Артикул</th><th>ID</th><th>Наименование</th><th>Наличие</th><th>Цена, без НДС</th></tr></thead>
+        <tbody>
+          <tr><td>71B3550</td><td>08884623</td><td>CLIP top BLUMOTION петля 110°</td><td><span class="stock stock--in">В наличии</span></td><td>395,00 RUB</td></tr>
+          <tr><td>173L6100</td><td>07481175</td><td>CLIP ответная планка, 0 мм</td><td><span class="stock stock--wait">Ожидается</span></td><td>32,00 RUB</td></tr>
+          <tr><td>70T3504</td><td>09003173</td><td>Заглушка на чашку петли</td><td><span class="stock stock--unknown">Уточняйте</span></td><td>22,00 RUB</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="sg-block">
+      <p class="sg-label">Плашки</p>
+      <div class="sg-row">
+        <span class="badge badge--hit">Хит продаж</span>
+        <span class="badge badge--special">Спецпредложение</span>
+        <span class="badge badge--sale">Акция</span>
+        <span class="badge badge--new">Новинка</span>
+        <span class="badge badge--discount">Скидка 15 %</span>
+      </div>
+    </section>
+
+    <section class="sg-block">
+      <p class="sg-label">Кнопки</p>
+      <h3>Без состояния</h3>
+      <div class="sg-row"><button class="btn btn--primary">В корзину</button><button class="btn btn--navy">Каталог</button><button class="btn btn--outline">Подробнее</button><button class="btn btn--ghost">Сбросить</button><a class="btn-nav" href="#"><span class="btn-nav__label">Смотреть каталог</span><span class="btn-nav__arrow"><i data-icon="arrowRight"></i></span></a></div>
+      <h3>При наведении</h3>
+      <div class="sg-row"><button class="btn btn--primary is-hover">В корзину</button><button class="btn btn--outline is-hover">Подробнее</button></div>
+      <h3>В фокусе</h3>
+      <div class="sg-row"><button class="btn btn--primary is-focus">В корзину</button><button class="btn btn--outline is-focus">Подробнее</button></div>
+      <h3>Отключённая</h3>
+      <div class="sg-row"><button class="btn btn--primary" disabled>В корзину</button><button class="btn btn--outline" disabled>Подробнее</button></div>
+    </section>
+
+    <section class="sg-block sg-dark">
+      <p class="sg-label">Кнопки на тёмном фоне</p>
+      <div class="sg-row"><button class="btn btn--primary">В корзину</button><button class="btn btn--primary is-hover">При наведении</button><button class="btn btn--outline">Контурная</button><button class="btn btn--outline is-hover">Контурная, наведение</button><button class="btn btn--primary" disabled>Отключённая</button></div>
+    </section>
+
+    <section class="sg-block">
+      <p class="sg-label">Формы</p>
+      <form class="form">
+        <div class="form__row">
+          <label class="field"><span class="field__label">Ваше имя<i>*</i></span><input type="text" placeholder="Ваше Имя"></label>
+          <label class="field"><span class="field__label">E-mail<i>*</i></span><input type="email" placeholder="name@company.ru"></label>
+        </div>
+        <label class="field is-error"><span class="field__label">Телефон<i>*</i></span><input type="tel" value="abc"><span class="field__error">Введите номер с кодом страны</span></label>
+        <label class="field"><span class="field__label">Комментарий</span><textarea rows="3" placeholder="Уточнение к заявке"></textarea></label>
+        <label class="form__check"><input type="checkbox" checked><span>Согласен на обработку персональных данных</span></label>
+        <label class="form__check"><input type="checkbox"><span>Хочу получать новости о наличии</span></label>
+        <div class="sg-row"><button class="btn btn--primary" type="button">Отправить</button><button class="btn btn--outline" type="reset">Очистить</button></div>
+      </form>
+    </section>
+
+    <section class="sg-block">
+      <p class="sg-label">Аккордеон</p>
+      <div class="collapse is-open">
+        <h3><button class="collapse__btn" type="button" data-collapse aria-expanded="true">Характеристики<i data-icon="chevronDown"></i></button></h3>
+        <div class="collapse__body"><p>Угол открывания 110°, механизм закрывания BLUMOTION, крепление чашки на саморезы.</p></div>
+      </div>
+      <div class="collapse">
+        <h3><button class="collapse__btn" type="button" data-collapse aria-expanded="false">Инструкции и брошюры<i data-icon="chevronDown"></i></button></h3>
+        <div class="collapse__body"><p>Таблица исполнений, инструкция по монтажу, обзор изделий Blum.</p></div>
+      </div>
+    </section>
+
+    <section class="sg-block">
+      <p class="sg-label">Загрузка</p>
+      <div class="sg-row">
+        <span class="loader" role="status" aria-label="Загрузка"></span>
+        <span class="loader loader--lg" role="status" aria-label="Загрузка"></span>
+        <button class="btn btn--primary" type="button"><span class="loader"></span>Добавляем…</button>
+        <div class="skeleton skeleton--bar"></div>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="footer"></div>
+  <script src="assets/app.js?v=10"></script>
+</body>
+</html>

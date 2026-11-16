@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Вход в личный кабинет — Блюимпекс</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v=10">
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</head>
+<body data-access="guest">
+  <div data-include="header"></div>
+  <main class="container">
+    <div class="auth">
+      <div class="auth__lead">
+        <span class="caption">Личный кабинет B2B</span>
+        <h1 class="h1">Вход для клиентов</h1>
+        <p>Войдите, чтобы видеть специальные цены, управлять заказами и отслеживать их статусы.</p>
+        <ul class="auth__points">
+          <li><i data-icon="check" class="icon--s"></i>Персональный прейскурант и цены без НДС</li>
+          <li><i data-icon="check" class="icon--s"></i>Заявки, история заказов и черновики</li>
+          <li><i data-icon="check" class="icon--s"></i>Избранное и подбор фурнитуры Blum</li>
+        </ul>
+      </div>
+
+      <form class="form" data-form="client" novalidate>
+        <h2 class="h3">Вход в личный кабинет</h2>
+        <p class="form__note">Войдите, чтобы видеть специальные цены, управлять заказами и отслеживать их статусы.</p>
+        <label class="field"><span class="field__label">Ваш E-mail или номер телефона<i>*</i></span>
+          <input type="text" required placeholder="Ваш E-mail или Номер телефона в формате +375… (Беларусь) / +7… (Россия)" autocomplete="username">
+          <span class="field__hint">Без маски ввода: номер можно набрать целиком, с кодом страны</span>
+        </label>
+        <label class="field"><span class="field__label">Пароль<i>*</i></span>
+          <span class="pass"><input type="password" required placeholder="Пароль" autocomplete="current-password"><button class="icon-btn" type="button" data-eye aria-label="Показать пароль"><i data-icon="eye" class="icon--s"></i></button></span>
+        </label>
+        <a class="link" href="password.html">Забыли пароль?</a>
+        <button class="btn btn--primary btn--block" type="submit">Войти</button>
+        <p class="form__switch">Ещё нет личного кабинета? <a href="register.html">Зарегистрироваться</a></p>
+        <p class="form__note">Регистрация доступна только юридическим лицам и индивидуальным предпринимателям. Личный кабинет активирует менеджер после проверки регистрационных данных.</p>
+      </form>
+    </div>
+  </main>
+  <div data-include="footer"></div>
+  <script src="assets/app.js?v=10"></script>
+  <script src="assets/account.js?v=10"></script>
+</body>
+</html>

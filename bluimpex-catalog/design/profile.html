@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Профиль — личный кабинет Блюимпекс</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v=10">
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</head>
+<body data-access="client">
+  <div data-include="header"></div>
+  <main class="container">
+    <nav class="crumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span class="crumbs__sep">/</span><span class="crumbs__current">Личный кабинет</span></nav>
+    <div class="page-head"><h1 class="h1">Профиль</h1></div>
+    <div class="account">
+      <div data-account-nav="profile.html"></div>
+      <div class="profile">
+        <section class="profile__card">
+          <h2 class="h3">Данные компании</h2>
+          <dl class="profile__grid">
+            <div class="profile__item"><dt>Название компании / ФИО ИП</dt><dd>ООО «МебельПром»</dd></div>
+            <div class="profile__item"><dt>УНП / ИНН</dt><dd>192845671</dd></div>
+            <div class="profile__item"><dt>Город / населенный пункт</dt><dd>Минск</dd></div>
+            <div class="profile__item"><dt>E-mail</dt><dd>zakaz@mebelprom.by</dd></div>
+          </dl>
+          <p class="form__note">Чтобы изменить контактные данные или реквизиты компании — свяжитесь с вашим менеджером или отправьте запрос через форму.</p>
+          <button class="btn btn--outline btn--s" type="button" data-change>Запросить изменение данных</button>
+        </section>
+
+        <section class="profile__card">
+          <h2 class="h3">Ваш менеджер</h2>
+          <div class="manager">
+            <span class="manager__avatar">АК</span>
+            <div>
+              <div class="manager__name">Анна Ковалёва</div>
+              <p>Помогу уточнить наличие фурнитуры, оформить заказ, согласовать условия оплаты и получения товара. Обращайтесь и по вопросам работы в личном кабинете — подскажу, как воспользоваться его возможностями.</p>
+              <div class="manager__contacts">
+                <a href="tel:+375447688800">+375 (44) 768-88-00</a>
+                <a href="tel:+79169718800">+7 (916) 971-88-00</a>
+                <span class="muted">Сервисная почта будет указана позже</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="profile__card profile__card--note">
+          <h2 class="h4">Подписка на рассылку</h2>
+          <p class="form__note">Новости о наличии и персональные предложения. Раздел предусмотрен, подключение рассылки — следующим этапом.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <div class="modal" data-change-modal>
+    <div class="modal__dialog modal__dialog--s" role="dialog" aria-modal="true" aria-labelledby="change-title">
+      <button class="icon-btn modal__close" type="button" data-close aria-label="Закрыть"><i data-icon="close"></i></button>
+      <form data-form="profile.html" novalidate>
+        <h2 class="h3" id="change-title">Изменение данных</h2>
+        <p class="form__note">Напишите, какие изменения хотите внести. Запрос уйдёт вашему менеджеру.</p>
+        <label class="field"><span class="field__label">Описание изменений<i>*</i></span>
+          <textarea required rows="5" placeholder="Например: новый телефон для связи +375…"></textarea>
+        </label>
+        <button class="btn btn--primary btn--block" type="submit">Отправить запрос на изменение данных</button>
+      </form>
+    </div>
+  </div>
+
+  <div data-include="footer"></div>
+  <script src="assets/app.js?v=10"></script>
+  <script src="assets/account.js?v=10"></script>
+  <script>
+    const modal = document.querySelector('[data-change-modal]');
+    document.addEventListener('click', (e) => {
+      if (e.target.closest('[data-change]')) { modal.classList.add('is-open'); modal.querySelector('textarea').focus(); }
+      if (e.target.closest('[data-close]') || e.target === modal) modal.classList.remove('is-open');
+    });
+  </script>
+</body>
+</html>
