@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Избранное — личный кабинет Блюимпекс</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v=10">
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</head>
+<body data-access="client">
+  <div data-include="header"></div>
+  <main class="container" data-favorites>
+    <nav class="crumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span class="crumbs__sep">/</span><a href="profile.html">Личный кабинет</a><span class="crumbs__sep">/</span><span class="crumbs__current">Избранное</span></nav>
+    <div class="page-head"><h1 class="h1">Избранное</h1><span class="page-head__count"><span data-fav-total>0</span> товаров</span></div>
+    <div class="account">
+      <div data-account-nav="favorites.html"></div>
+      <div>
+        <div class="state" data-fav-empty>
+          <span class="state__icon"><i data-icon="heart"></i></span>
+          <h3 class="h4">В избранном пока пусто</h3>
+          <span>Отмечайте товары сердцем в каталоге — они появятся здесь и будут доступны на всех устройствах.</span>
+          <a class="btn btn--primary btn--s" href="list.html">Перейти в каталог</a>
+        </div>
+        <div class="products" data-fav-grid></div>
+      </div>
+    </div>
+  </main>
+  <div data-include="footer"></div>
+  <script>
+    /* Демо-набор избранного, если пользователь ещё ничего не добавлял.
+       Без глобальных переменных: иначе конфликтует с const favs из app.js. */
+    (function seedDemoFavorites() {
+      const DEMO = ['08884623', '00412758', '09120278', '07481175', '09343977', '00975012'];
+      const FLAG = 'bx-demo-favs-v2';
+      if (localStorage.getItem(FLAG)) return;
+      const saved = JSON.parse(localStorage.getItem('bx-favs') || '[]');
+      localStorage.setItem('bx-favs', JSON.stringify([...new Set([...saved, ...DEMO])]));
+      localStorage.setItem(FLAG, '1');
+    })();
+  </script>
+  <script src="assets/app.js?v=10"></script>
+  <script src="assets/account.js?v=10"></script>
+</body>
+</html>

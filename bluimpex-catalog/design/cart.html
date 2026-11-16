@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Корзина — Блюимпекс</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v=10">
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</head>
+<body data-access="client">
+  <div data-include="header"></div>
+  <main class="container" data-cart>
+    <nav class="crumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span class="crumbs__sep">/</span><span class="crumbs__current">Корзина</span></nav>
+    <div class="page-head"><h1 class="h1">Корзина</h1></div>
+    <div class="cart">
+        <div>
+          <div class="cart__toolbar">
+            <button class="btn btn--ghost btn--s" type="button" data-toast="Корзина очищена">Очистить корзину</button>
+            <button class="btn btn--ghost btn--s" type="button" data-toast="Сохранено в черновики"><i data-icon="file" class="icon--s"></i>Сохранить черновик</button>
+            <button class="btn btn--ghost btn--s" type="button" data-toast="Файл Excel формируется в выбранной валюте. В файле указано: цена и сумма без НДС"><i data-icon="file" class="icon--s"></i>Скачать Excel</button>
+            <button class="btn btn--outline btn--s" type="button" data-toast="Загрузка из Excel будет доступна после подключения обмена"><i data-icon="box" class="icon--s"></i>Добавить из Excel</button>
+          </div>
+          <div data-cart-list></div>
+        </div>
+
+        <aside class="summary" data-summary>
+          <div class="summary__row"><span>Товаров</span><span data-sum-count>0</span></div>
+          <div class="summary__row summary__row--total"><span>Итого без НДС</span><span data-sum-base>0</span></div>
+          <div class="summary__row"><span>С НДС РБ 20%</span><span data-sum-by>0</span></div>
+          <div class="summary__row"><span>С ввозным НДС РФ 22%
+            <button class="info" type="button" data-info aria-label="Пояснение по ввозному НДС"><i data-icon="info" class="icon--s"></i>
+              <span class="summary__tip" hidden>Ввозной НДС РФ покупатель уплачивает самостоятельно — отдельно от оплаты поставщику.</span>
+            </button></span><span data-sum-ru>0</span></div>
+          <a class="btn btn--primary btn--block" href="orders.html">Оформить заявку</a>
+          <p class="summary__note"><span class="summary__note-title">Заявка менеджеру, не оплата</span>Итоговая сумма в выбранной валюте указана справочно и не является публичной офертой. Все цены — без НДС.</p>
+        </aside>
+      </div>
+  </main>
+  <div data-include="footer"></div>
+  <script src="assets/app.js?v=10"></script>
+  <script src="assets/account.js?v=10"></script>
+</body>
+</html>

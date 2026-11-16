@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Регистрация в личном кабинете — Блюимпекс</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v=10">
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</head>
+<body data-access="guest">
+  <div data-include="header"></div>
+  <main class="container">
+    <div class="auth">
+      <div class="auth__lead">
+        <span class="caption">Только для юридических лиц и ИП</span>
+        <h1 class="h1">Регистрация в личном кабинете</h1>
+        <p>В личном кабинете вы сможете видеть специальные цены, оформлять заказы, отслеживать их статусы, просматривать историю и получать персональные предложения.</p>
+        <p>Регистрация доступна только юридическим лицам и индивидуальным предпринимателям.</p>
+        <p>Мы подтверждаем каждую регистрацию вручную, поэтому просим вас указывать актуальные контактные данные — менеджер свяжется с вами и активирует личный кабинет.</p>
+      </div>
+
+      <form class="form" data-form="registered.html" novalidate>
+        <h2 class="h3">Данные компании</h2>
+        <div class="form__row">
+          <label class="field"><span class="field__label">Ваше имя<i>*</i></span>
+            <input type="text" required data-capital placeholder="Ваше Имя" autocomplete="given-name">
+            <span class="field__error" hidden>Имя с прописной буквы</span>
+          </label>
+          <label class="field"><span class="field__label">Название компании / ФИО ИП<i>*</i></span>
+            <input type="text" required placeholder="ООО «…» или ФИО ИП" autocomplete="organization">
+          </label>
+        </div>
+        <div class="form__row">
+          <label class="field"><span class="field__label">E-mail<i>*</i></span>
+            <input type="email" required placeholder="E-mail" autocomplete="email">
+          </label>
+          <label class="field"><span class="field__label">УНП / ИНН<i>*</i></span>
+            <input type="text" required inputmode="numeric" placeholder="УНП / ИНН">
+          </label>
+        </div>
+        <div class="form__row">
+          <label class="field"><span class="field__label">Телефон<i>*</i></span>
+            <input type="tel" required placeholder="+" autocomplete="tel">
+            <span class="field__hint">Номер целиком, без маски: +375… или +7…</span>
+          </label>
+          <label class="field"><span class="field__label">Город / населенный пункт</span>
+            <input type="text" placeholder="Город / населенный пункт" autocomplete="address-level2">
+          </label>
+        </div>
+        <label class="field"><span class="field__label">Пароль<i>*</i></span>
+          <span class="pass"><input type="password" required minlength="8" placeholder="Минимум 8 символов" autocomplete="new-password"><button class="icon-btn" type="button" data-eye aria-label="Показать пароль"><i data-icon="eye" class="icon--s"></i></button></span>
+        </label>
+        <label class="field"><span class="field__label">Подтверждение пароля<i>*</i></span>
+          <span class="pass"><input type="password" required minlength="8" placeholder="Повторите пароль" autocomplete="new-password"><button class="icon-btn" type="button" data-eye aria-label="Показать пароль"><i data-icon="eye" class="icon--s"></i></button></span>
+        </label>
+        <label class="form__check"><input type="checkbox" data-agree required><span>Подтверждаю ознакомление с <a class="link" href="#">Положением о политике в отношении обработки персональных данных</a> посетителей сайта, клиентов и контрагентов ЗАО «Блюимпекс», даю согласие на обработку моих персональных данных</span></label>
+        <button class="btn btn--primary btn--block" type="submit">Зарегистрироваться</button>
+        <p class="form__switch">Уже есть личный кабинет? <a href="login.html">Войти</a></p>
+      </form>
+    </div>
+  </main>
+  <div data-include="footer"></div>
+  <script src="assets/app.js?v=10"></script>
+  <script src="assets/account.js?v=10"></script>
+</body>
+</html>

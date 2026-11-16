@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Детали и принадлежности для систем петель — Блюимпекс</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v=10">
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</head>
+<body data-access="guest">
+  <div data-include="header"></div>
+
+  <main class="container" data-listing>
+    <nav class="crumbs" aria-label="Хлебные крошки">
+      <a href="index.html">Главная</a><span class="crumbs__sep">/</span>
+      <a href="catalog.html">Каталог Blum</a><span class="crumbs__sep">/</span>
+      <span class="crumb">
+        <a href="list.html">Системы петель</a>
+        <button class="crumb__toggle" type="button" aria-expanded="false" aria-label="Подразделы"><i data-icon="chevronDown" class="icon--s"></i></button>
+        <span class="crumb__menu">
+          <a href="list.html">Комплекты по применению</a>
+          <a class="is-active" href="list.html">Детали и принадлежности для систем петель</a>
+        </span>
+      </span>
+      <span class="crumbs__sep">/</span>
+      <span class="crumbs__current" aria-current="page">Детали и принадлежности</span>
+    </nav>
+
+    <div class="page-head">
+      <h1 class="h1">Детали и принадлежности для систем петель</h1>
+      <span class="page-head__count" data-count>231 товар</span>
+    </div>
+
+    <div class="listing">
+      <aside class="filters" aria-label="Фильтры">
+        <div class="filters__head">
+          <span class="filters__title">Фильтры</span>
+          <button class="icon-btn filters__close" type="button" data-close-filters aria-label="Закрыть фильтры"><i data-icon="close"></i></button>
+        </div>
+        <div data-filters></div>
+        <div class="filters__foot">
+          <button class="btn btn--primary btn--block filters__close" type="button" data-close-filters>Показать товары</button>
+          <button class="btn btn--ghost btn--block" type="button" data-reset>Сбросить фильтр</button>
+        </div>
+      </aside>
+
+      <div>
+        <div class="toolbar">
+          <button class="btn btn--outline btn--s toolbar__filters-btn" type="button" data-open-filters><i data-icon="filter" class="icon--s"></i>Фильтры</button>
+          <span class="toolbar__label">Сортировать:</span>
+          <div class="sort" data-sort></div>
+        </div>
+        <div class="applied" data-applied aria-live="polite"></div>
+
+        <div class="products" data-products></div>
+
+        <div class="more">
+          <button class="btn btn--outline" type="button">Показать ещё 24 товара</button>
+          <nav class="pager" aria-label="Страницы">
+            <span class="is-current" aria-current="page">1</span><a href="#">2</a><a href="#">3</a><span>…</span><a href="#">10</a>
+            <a href="#" aria-label="Следующая"><i data-icon="chevronRight" class="icon--s"></i></a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <section class="seo" aria-label="О разделе">
+      <h2 class="h3">Детали для петель Blum CLIP top</h2>
+      <p>SEO-текст подраздела из админки: монтажные планки, заглушки, ограничители угла открывания и другие принадлежности для систем петель CLIP top и CLIP top BLUMOTION.</p>
+    </section>
+
+    <!-- Состояния списка: справочная витрина для дизайна, на сайте не выводится -->
+    <section class="block" aria-label="Состояния списка">
+      <div class="block__head"><h2 class="h3">Состояния списка</h2><span class="caption">для разработки</span></div>
+      <div class="products">
+        <div class="state">
+          <span class="state__icon"><i data-icon="search"></i></span>
+          <h3 class="h4">Ничего не найдено</h3>
+          <span>По выбранным параметрам товаров нет. Попробуйте изменить фильтр.</span>
+          <button class="btn btn--ghost btn--s" type="button">Сбросить фильтр</button>
+        </div>
+        <div class="state">
+          <span class="state__icon"><i data-icon="box"></i></span>
+          <h3 class="h4">В разделе пока нет товаров</h3>
+          <span>Скоро здесь появится ассортимент. Уточнить наличие можно у менеджера.</span>
+          <a class="btn btn--ghost btn--s" href="tel:+375447688800">Связаться</a>
+        </div>
+        <div class="state">
+          <span class="state__icon state__icon--alert"><i data-icon="alert"></i></span>
+          <h3 class="h4">Не удалось загрузить товары</h3>
+          <span>Проверьте подключение и попробуйте ещё раз.</span>
+          <button class="btn btn--outline btn--s" type="button"><i data-icon="refresh" class="icon--s"></i>Повторить</button>
+        </div>
+        <div class="skeleton" aria-label="Загрузка"></div>
+        <div class="skeleton"></div>
+        <div class="skeleton"></div>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="footer"></div>
+  <script src="assets/app.js?v=10"></script>
+</body>
+</html>
